@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Arthibition</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 1rem;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000;
+            writing-mode: vertical-rl;
+        }
+
+        /* About Us Section */
+        .about-us {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 2rem;
+            background-color: #f4f4f4;
+            gap: 2rem;
+        }
+
+        .about-text {
+            max-width: 50%;
+            padding: 2rem;
+        }
+
+        .about-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text p {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .about-img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .about-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 2rem;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact p {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            text-align: left;
+        }
+
+        .contact-item h3 {
+            color: #000;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item p {
+            color: #555;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1024px) {
+            .about-text {
+                max-width: 100%;
+            }
+
+            .about-us {
+                padding: 2rem 1rem;
+            }
+
+            .about-img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .contact-details {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-item {
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1rem;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                width: 100%;
+                margin-top: 1rem;
+            }
+
+            .navbar ul li {
+                margin: 0.5rem 0;
+                text-align: center;
+            }
+
+            .logo {
+                writing-mode: horizontal-tb;
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+
+            .about-text h1 {
+                font-size: 2rem;
+            }
+
+            .about-text p {
+                font-size: 1rem;
+            }
+
+            .about-img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about-text h1 {
+                font-size: 1.8rem;
+            }
+
+            .about-text p {
+                font-size: 0.9rem;
+            }
+
+            .about-img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .contact h2 {
+                font-size: 1.5rem;
+            }
+
+            .contact-item h3 {
+                font-size: 1.2rem;
+            }
+
+            .contact-item p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="home.html">Discover</a></li>
+                <li><a href="#">Exhibition</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="logo">HomeLand.</div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="about-text">
+            <h1>About Us</h1>
+            <p>HomeLand is an epic, action packed afrocentric comic that journeys through time blending mythologies, fierce tribal warfare and the transformative clash of cultures. Set in a world where ancient afro tribes rise, fall and evolve, this story unveils the ultimate struggle for power, survival and identity as each defend their right to Homeland</p>
+            <p>From deeply rooted ancient traditions of civilization, to the chaos of colonial encounters and the dawn of a futuristic world, the narritive captures the triumphs, tragedies and resilience of nations forging destiny across time in a world defined by conflict. Experience a saga of power, mysticism and evolution as the past and future colide in a breathtaking new Era of storytelling!</p>
+        </div>
+        <div class="about-images">
+            <img src="one.jpg" alt="Artist 1" class="about-img">
+            <img src="two.jpg" alt="Artist 2" class="about-img">
+            <img src="three.jpg" alt="Artist 3" class="about-img">
+            <img src="IMG-20241204-WA0018.jpg" alt="Artist 4" class="about-img">
+            <img src="IMG-20241204-WA0019.jpg" alt="Artist 5" class="about-img">
+            <img src="IMG-20241204-WA0020.jpg" alt="Artist 6" class="about-img">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to collaborate, feel free to reach out to us. We would love to hear from you!</p>
+        <div class="contact-details">
+            <div class="contact-item">
+                <h3>Address</h3>
+                <p>Maseru city, Maseru district, Lesotho</p>
+            </div>
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>patanamosiuoa@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <h3>Phone</h3>
+                <p>+266 6884-8618</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Add interactivity if needed
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('Button clicked! Add your functionality here.');
+            });
+        });
+    </script>
+</body>
+</html>
