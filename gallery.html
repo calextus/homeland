@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - HomeLand</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 1rem;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000;
+            writing-mode: vertical-rl;
+        }
+
+        /* Gallery Section */
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 1.5s ease;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 400px;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .static-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .static-images img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .static-images img:hover {
+            transform: scale(1.05);
+        }
+
+        .paragraphs {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .paragraphs p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .slide img {
+                height: 300px;
+            }
+
+            .static-images img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .static-images img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Discover</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="logo">HomeLand.</div>
+    </header>
+
+    <!-- Slider Section -->
+    <section class="slider">
+        <div class="slides">
+            <div class="slide"><img src="IMG-20241204-WA0018.jpg" alt="Slide 1"></div>
+            <div class="slide"><img src="IMG-20241204-WA0019.jpg" alt="Slide 2"></div>
+            <div class="slide"><img src="three.jpg" alt="Slide 3"></div>
+            <div class="slide"><img src="two.jpg" alt="Slide 4"></div>
+            <div class="slide"><img src="one.jpg" alt="Slide 5"></div>
+        </div>
+    </section>
+
+    <!-- Paragraph Section -->
+    <section class="paragraphs">
+        <p>Paragraph 1: This gallery showcases the vibrant world of HomeLand, where culture and creativity converge.</p>
+        <p>Paragraph 2: Each image tells a story of resilience, evolution, and the beauty of ancient traditions.</p>
+        <p>Paragraph 3: From tribal artistry to futuristic visions, our gallery captures a saga of power and mysticism.</p>
+        <p>Paragraph 4: Experience the intersection of cultures through visual storytelling.</p>
+        <p>Paragraph 5: HomeLand’s gallery is a tribute to the past and a bridge to the future.</p>
+    </section>
+
+    <!-- Static Images Section -->
+    <section class="static-images">
+        <img src="IMG-20241204-WA0018.jpg" alt="Static Image 1">
+        <img src="IMG-20241204-WA0019.jpg" alt="Static Image 2">
+        <img src="IMG-20241204-WA0020.jpg" alt="Static Image 3">
+        <img src="IMG-20241204-WA0021.jpg" alt="Static Image 4">
+        <img src="one.jpg" alt="Static Image 5">
+        <img src="two.jpg" alt="Static Image 6">
+        <img src="three.jpg" alt="Static Image 7">
+        <img src="homeland.jpg" alt="Static Image 8">
+    </section>
+
+
+    <section class="static-images">
+        <img src="image1.jpg" alt="Static Image 1">
+        <img src="image2.jpg" alt="Static Image 2">
+        <img src="image3.jpg" alt="Static Image 3">
+        <img src="image4.jpg" alt="Static Image 4">
+        <img src="image5.jpg" alt="Static Image 5">
+        <img src="image6.jpg" alt="Static Image 6">
+        <img src="image7.jpg" alt="Static Image 7">
+        <img src="image8.jpg" alt="Static Image 8">
+    </section>
+
+    <section class="static-images">
+        <img src="image1.jpg" alt="Static Image 1">
+        <img src="image2.jpg" alt="Static Image 2">
+        <img src="image3.jpg" alt="Static Image 3">
+        <img src="image4.jpg" alt="Static Image 4">
+        <img src="image5.jpg" alt="Static Image 5">
+        <img src="image6.jpg" alt="Static Image 6">
+        <img src="image7.jpg" alt="Static Image 7">
+        <img src="image8.jpg" alt="Static Image 8">
+    </section>
+
+    <script>
+        // Slider functionality
+        const slides = document.querySelector('.slides');
+        let index = 0;
+
+        setInterval(() => {
+            index = (index + 1) % 5; // Change 5 to the number of slides
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }, 3000); // Change 3000 for slower or faster transitions (ms)
+    </script>
+</body>
+</html>

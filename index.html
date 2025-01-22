@@ -23,7 +23,6 @@
         /* Navbar */
         .navbar {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             padding: 1rem 2rem;
@@ -34,8 +33,10 @@
         .navbar ul {
             list-style: none;
             display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
+        }
+
+        .navbar ul li {
+            margin: 0 1rem;
         }
 
         .navbar ul li a {
@@ -50,6 +51,7 @@
             color: #000;
             writing-mode: vertical-rl;
         }
+
 
         /* Hero Section */
         .hero {
